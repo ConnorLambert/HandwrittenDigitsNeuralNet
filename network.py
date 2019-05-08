@@ -59,7 +59,7 @@ class Network(object): #- This class is the centerpiece of our codes
 
         for j in range(epochs):
             random.shuffle(training_data) # - Shuffle the training data
-            mini_batches = [
+            mini_batches = [              # - Establish our batches
                 training_data[k:k+mini_batch_size]
                 for k in range(0, n, mini_batch_size)]
             for mini_batch in mini_batches:
